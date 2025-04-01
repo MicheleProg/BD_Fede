@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buon Compleanno Fede!</title>
+  <!-- Stili CSS integrati -->
+  <style>
+    /* Impostazioni globali: reset margini, padding, font e box-sizing */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Sfondo del body con immagine, impostata per coprire l'intera pagina */
+    body {
+      background: url('SqualoPortogallo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #191164;
+      line-height: 1.6;
+    }
+
+    /* Barra di navigazione fissa in alto */
+    nav {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    nav ul {
+      list-style: none;
+      display: inline-block;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #e74c3c;
+    }
+
+    /* Spacer per evitare che il contenuto venga nascosto dal nav fisso */
+    .spacer {
+      height: 250px;
+    }
+
+       /* Spacer per evitare che il contenuto venga nascosto dal nav fisso */
+       .MinorSpacer {
+      height: 60px;
+    }
+
+    /* Header con titolo e sottotitolo */
+    header {
+      text-align: center;
+      padding: 100px 20px 50px;
+      background: rgba(255, 255, 255, 0.9);
+      margin: 20px;
+      border-radius: 8px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    
+
+    /* Sezione foto con galleria */
+    .photo-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .photo-gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+    .photo-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Responsive design per schermi piccoli */
+    @media (max-width: 768px) {
+      .photo-gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra di navigazione -->
+  <nav>
+    <ul>
+      <li><a href="#auguri">Auguri</a></li>
+      <li><a href="#foto">Foto</a></li>
+      <li><a href="#messaggio">Messaggio</a></li>
+    </ul>
+  </nav>
+
+  <!-- Div per lo spazio in alto per non far coprire il contenuto dal nav -->
+  <div class="spacer"></div>
+
+  <!-- Header con titolo e sottotitolo -->
+  <header id="auguri">
+    <h1>Buon Compleanno!</h1>
+    <p>Auguri Fede da Michele!</p>
+  </header>
+
+   <!-- Div per lo spazio in alto per non far coprire il contenuto dal nav -->
+   <div class="MinorSpacer"></div>
+
+  <!-- Sezione foto -->
+  <section id="foto">
+    <h2 style="text-align: center; margin:20px 0;">Fotogallery di compleanno</h2>
+    <div class="photo-gallery">
+      <!-- Sostituisci "foto1.jpg", "foto2.jpg", etc. con i percorsi delle tue immagini -->
+      <img src="Gilardino.png" alt="Foto 1">
+      <img src="Grigliata1.jpg" alt="Foto 3">
+      <img src="Snoopy.jpg" alt="Foto 4">
+    </div>
+  </section>
+
+  <!-- Sezione messaggio -->
+  <section id="messaggio">
+    <h2 style="text-align: center; margin:20px 0;">2 Aprile 2025</h2>
+    <p style="text-align: center; padding:0 20px;">
+      Tanti auguri per i tuoi 26 anni. Questo è il mio bigliettino, che mi serve anche per imparare qualcosa di HTML.
+       Dove lo trovi un amico così?!
+    </p>
+  </section>
+</body>
+</html>
